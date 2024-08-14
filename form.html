@@ -7,6 +7,59 @@
 </head>
 <body>
     <h1>Formulir Isian</h1>
-    <form action="#" method="post"></form>
+    <form action="/daftar" method="post">
+     <p>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" placeholder="Nama" id="name" name="name">
+    </p>
+        <label for="email">email</label>
+        <input type="email" placeholder="email" id="email" name="email">
+    <div>
+        <label for="password">password</label>
+        <input type="password" placeholder="password" id="password" name="password">
+    </div>
+        <label for="phone">phone</label>
+        <input type="number" placeholder="phone" id="phone" name="phone">
+   <button type="submit">kirim</button>
+ 
+</form>
+
+    <hr>
+
+    <h1>Pesanan</h1>
+    <form action="/order" >
+       <div> 
+        <label for="">baju</label> </div>
+      <div>
+          <input type="radio" name="baju" id="" value="kemeja" > <label for="">kemeja</label>
+    </div>
+    <div>
+        <input type="radio" name="baju" id="" value="kaos" checked> <label for="">kaos</label>
+    </div>
+   <hr>
+   
+
+   <div>
+    <div>
+    <label for="ukuran">ukuran</label>
+   </div>
+   <select name="ukuran" id="ukuran">
+    <option value="">Pilih ukuran</option>
+    <option value="s">small</option>
+    <option value="m">medium</option>
+    <option value="l">large</option>
+   </select>
+   </div>
+
+   
+   <div>
+    <label for="term">sesuai Pesanan</label>
+    <input type="checkbox" name="term" id="term" checked>
+   </div>
+       <p><button type="submit">order</button>  </p> 
+    </form>
+
+
+
 </body>
 </html>
